@@ -18,3 +18,4 @@ Everything MPC related is contained within the custom ServiceManager class. The 
 * MPC by design only works with other iOS devices.
 * There is no security implemented to block peers or reject connections.
 * There is an issue with the TaskQueue timer in which it fires more times than intended and does not turn off when intended.
+* The original code was written for Swift 2.3, and has been automatically updated by XCode to comply with Swift 3.0. The code may not work as originally intended.
