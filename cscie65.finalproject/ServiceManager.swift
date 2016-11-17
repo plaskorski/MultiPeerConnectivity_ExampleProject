@@ -75,6 +75,7 @@ class ServiceManager : NSObject, MCNearbyServiceBrowserDelegate,
                     s.stopServices()
                     let d = me.asDict()
                     s.myDiscoveryInfo = d
+                    // this is no longer necessary, was an attempt to fix a problem
                     // http://stackoverflow.com/questions/27517632/how-to-create-a-delay-in-swift
                     let time = DispatchTime(uptimeNanoseconds: (UInt64) (Double(4 * Int64(NSEC_PER_SEC)) / Double(NSEC_PER_SEC)))
                     DispatchQueue.main.asyncAfter(deadline: time) {
